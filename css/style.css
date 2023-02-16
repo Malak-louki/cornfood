@@ -1,0 +1,233 @@
+/* ********************************
+*TYPOGRAPHIES
+******************************** */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&family=Mandali&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+  font-family: "rockwell";
+  src: url(../Rockwell.ttf);
+}
+/* **********************
+****CSS GENERAL 
+********************* */
+:root {
+  --rose: 234, 145, 145;
+  --bleu: 75, 73, 117;
+  --jaune: 230, 179, 49;
+  --shadow: 0 5px 13px rgba(0, 0, 0, 0.2);
+}
+body {
+  font-family: "roboto", sans-serif;
+}
+h1 {
+  font-weight: 900;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h2,
+h3 {
+  color: rgb(var(--bleu));
+}
+h2 {
+  font-size: 32px;
+}
+::placeholder{
+    color: white;
+}
+/* *************************
+** CLASSES GLOBALES*
+******************************* */
+.rockwell {
+  font-family: "rockwell", sans-serif;
+}
+.btn {
+  border-radius: 50px;
+  padding: 0 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-5px);
+  background-color: rgb(var(--rose));
+}
+.btn.btn-main {
+  background-color: white;
+  color: rgb(var(--rose));
+}
+.style-form{
+    background-color: rgba(255, 255, 255, 0.387);
+    border-radius: 30px;
+    border: none;
+    padding: 20px 20px;
+    margin: 5px;
+}
+.btn-pink{
+    background-color: rgb(var(--rose));
+    color: white;
+    padding: 8px 25px;
+  }
+
+
+/* ***********************
+****** CSS PAR SECTION
+***************************/
+header {
+  background-image: linear-gradient(
+      to top right,
+      rgba(var(--rose), 0.7),
+      rgba(var(--bleu), 0.7)
+    ),
+    url("../img/photo.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  position: relative;
+  /* pour le ::after par rapport au header */
+  color: white;
+}
+header::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  rotate: 45deg;
+  left: calc(50% - 25px);
+  bottom: -25px;
+}
+header img {
+  height: 50px;
+}
+header .txt {
+  margin: 150px 0;
+}
+/* ****************************** FIN HEADER ************************************************* */
+/* ************************************SECTION DU NATUREL ************************************* */
+#concept {
+  margin-top: 120px;
+}
+#concept h2 {
+  position: relative;
+  padding-left: 50px;
+}
+#concept h2::before {
+  content: "";
+  width: 200px;
+  height: 180px;
+  background-image: url("../img/grain.png");
+  background-color: rgb(var(--jaune));
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: -10px;
+  top: -70px;
+  z-index: -1;
+  box-shadow: var(--shadow);
+}
+#concept ul li h3 {
+  margin-top: 5px;
+}
+#concept ul li img {
+  width: 32px;
+  margin-right: 15px;
+}
+
+/* ************************************************* SECTION PRODUITS *************************************** */
+#produits {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 50px;
+}
+#produits ul li img {
+  width: 200px;
+}
+#produits h2 {
+  color: #ea9191;
+}
+/* *********************** FOOTER
+*************************** */
+footer {
+  background: rgb(75, 73, 117);
+  background: linear-gradient(
+    25deg,
+    rgba(75, 73, 117, 0.8295693277310925) 0%,
+    rgba(234, 145, 145, 0.8799894957983193) 43%,
+    rgba(230, 179, 49, 0.8099614845938375) 100%
+  );
+}
+/* ****************FOOTER COTE GAUCHE************************ */
+footer h2 {
+  color: white;
+}
+footer .pin {
+  position: absolute;
+  top: 100px;
+  left: 170px;
+}
+/* footer .pin img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+} */
+footer h2::after {
+  content: "";
+  width: 1px;
+  height: 55px;
+  margin-top: 5px;
+  background-color: white;
+  /* position: absolute; */
+  display: block;
+  margin-left: 25px;
+}
+footer .parent .mail::after {
+  content: "";
+  width: 55px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 130px;
+  margin-left: 25px;
+}
+footer .parent .pin::after {
+  content: "";
+  width: 1px;
+  height: 55px;
+  margin-top: 5px;
+  background-color: white;
+  /* position: absolute; */
+  display: block;
+  margin-left: 25px;
+}
+footer p {
+  margin-top: 80px;
+  margin-left: 130px;
+}
+#social-media{
+    margin-left: 110px;
+}
+#social-media img {
+  width: 40px;
+  margin: 5px;
+}
+.mail img {
+  width: 60px;
+}
+.pin img{
+    width: 45px;
+}
+
+button{
+    position: absolute;
+    top: calc(92%);
+    left: calc(50% - 50px);
+}
+#block-footer::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+
