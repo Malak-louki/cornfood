@@ -32,8 +32,8 @@ h3 {
 h2 {
   font-size: 32px;
 }
-::placeholder{
-    color: white;
+::placeholder {
+  color: white;
 }
 /* *************************
 ** CLASSES GLOBALES*
@@ -55,19 +55,18 @@ h2 {
   background-color: white;
   color: rgb(var(--rose));
 }
-.style-form{
-    background-color: rgba(255, 255, 255, 0.387);
-    border-radius: 30px;
-    border: none;
-    padding: 20px 20px;
-    margin: 5px;
+.style-form {
+  background-color: rgba(255, 255, 255, 0.387);
+  border-radius: 30px;
+  border: none;
+  padding: 20px 20px;
+  margin: 5px;
 }
-.btn-pink{
-    background-color: rgb(var(--rose));
-    color: white;
-    padding: 8px 25px;
-  }
-
+.btn-pink {
+  background-color: rgb(var(--rose));
+  color: white;
+  padding: 8px 25px;
+}
 
 /* ***********************
 ****** CSS PAR SECTION
@@ -165,11 +164,7 @@ footer .pin {
   top: 100px;
   left: 170px;
 }
-/* footer .pin img{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-} */
+
 footer h2::after {
   content: "";
   width: 1px;
@@ -197,14 +192,14 @@ footer .parent .pin::after {
   background-color: white;
   /* position: absolute; */
   display: block;
-  margin-left: 25px;
+  margin-left: 23px;
 }
 footer p {
   margin-top: 80px;
   margin-left: 130px;
 }
-#social-media{
-    margin-left: 110px;
+#social-media {
+  margin-left: 110px;
 }
 #social-media img {
   width: 40px;
@@ -213,21 +208,37 @@ footer p {
 .mail img {
   width: 60px;
 }
-.pin img{
-    width: 45px;
+.pin img {
+  width: 45px;
 }
 
-button{
-    position: absolute;
-    top: calc(92%);
-    left: calc(50% - 50px);
+button {
+  position: absolute;
+  top: calc(92%);
+  left: calc(50% - 70px);
 }
-#block-footer::after{
-    content: "";
-    width: 50%;
-    height: 2px;
-    background-color: white;
-    display: block;
-    margin: auto;
+#block-footer::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  display: block;
+  margin: auto;
 }
 
+/* ******************************* STYLE PAGE 2 **************************************** */
+/* ***************** CAROUSSEL************* */
+/* .carousel-inner {
+  background: linear-gradient(
+    to right,
+    rgba(var(--rose), 0.2) rgba(var(--rose), 0.8)
+  );
+}
+.carousel img{
+  aspect-ratio: 3/1;
+  object-fit: cover;
+  object-position: right;
+}
+.carousel-caption{
+  background-color: rgba(0, 0, 0, 0.193);
+} */
